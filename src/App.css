@@ -1,0 +1,128 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9; /* Light gray background */
+  color: #333; /* Dark text for good contrast */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.CalcContainer {
+  background-color: #ffffff; /* White background for the calculator */
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #4a4a4a; /* Dark gray for the title */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Display Styles */
+.CalcDisplay {
+  font-size: 1.2rem;
+  background-color: #f1f1f1; /* Light gray background for display */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for readability */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Number Button Styles */
+.NumButton {
+  background-color: #89c2d9; /* Soft blue color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(137, 194, 217, 0.4);
+}
+
+.NumButton:hover {
+  transform: translateY(-3px);
+  background-color: #6ba6c4; /* Slightly darker blue on hover */
+}
+
+.NumButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Button Styles */
+.TextButton {
+  background-color: #f5a623; /* Soft orange color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(245, 166, 35, 0.4);
+}
+
+.TextButton:hover {
+  transform: translateY(-3px);
+  background-color: #f58220; /* Darker orange on hover */
+}
+
+.TextButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset & Name Buttons */
+button:not(.NumButton):not(.TextButton) {
+  background-color: #7ed321; /* Soft green color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(126, 211, 33, 0.4);
+}
+
+button:not(.NumButton):not(.TextButton):hover {
+  transform: translateY(-3px);
+  background-color: #65c12f; /* Darker green on hover */
+}
+
+button:not(.NumButton):not(.TextButton):active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Layout */
+.ButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles for "RESET" and "NAME" */
+button:nth-child(10),
+button:nth-child(12) {
+  background-color: #ff6f61; /* Coral color */
+}
+
+button:nth-child(10):hover,
+button:nth-child(12):hover {
+  background-color: #e75b50; /* Darker coral on hover */
+}
